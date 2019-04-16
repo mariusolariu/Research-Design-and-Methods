@@ -53,8 +53,8 @@
 		\includegraphics[width = 5cm,height = 1.5cm]{./imgs/uws_logo.png}\\[5cm]
 
 	{ \huge \bfseries %
-		Development and evaluation of a Mobile Web booking application for youth work\\ \Large 
-}
+		Development and evaluation of the usability of a Mobile Web system used in youth work by YMCA Pailsey\\ \Large}
+
 	\vspace{2cm}
 	
 	\vspace{2cm}			
@@ -100,17 +100,27 @@
 % (maximum 300 words – please give word count in document) 
 A pilot study on the development of a Mobile Web system (mobile app and webpage) for YMCA Paisley.
 
+Keywords: booking, mobile booking,
+
+\newpage
 \section{Aims}(5 p - 125w )\\
 % General statements on intent and direction of the research
-The main aim of this work is to develop a prototype webpage and a mobile application for the YMCA Paisley. This software system would provide valuable insights for the organization regarding their activity and how it can be improved using the mobile and web technology. Moreover, once the study is finished the organisation can decide if it's worth to commission the development of such a system by a company or not. 
+\indent
+The main aim of this work is to develop a prototype webpage and a mobile application for the YMCA Paisley. In this work the term mobile-web system is going to describe the two software artefacts. This mobile-web system would provide valuable insights for the organization regarding their activity and how it can be improved using the mobile and web technology. Moreover, once the study is finished the organisation can decide if it's worth to commission the development of such a system by a company or not. 
+YMCA Pailsey is a nonprofit organization thus it needs to do a thourugh assesment regarding any investition.
 
 \section{Objectives}(10 p - 250w)\\
 % A list of clear, measurable statements of intended outcomes. i.e. What you are going to do in order to answer the question in the title and how you are going to do this (in relative detail) 
+
+	The first step is to have one or two meetings with the users (manager and volunteers alike) of the mobile-web system in order to derive a  set of requirements. Once this is done a project document should be written containing the following headings: description of project, system requirements, system specifications and software design methods. This document should be made available to all the parts invovled (developers, volunteers, manager) so that they can provide additional input. A literature research should be performed to see if there are similar projects in order to obtain a better understanding of this type of booking system. Apart from development, an evaluation is necessary which is split in two parts: technical  and non-technical. To perform the technical evaluation of the software the developers have to write unit tests. The non-technical evaluation uses a structured interview regarding the youth activity done by YMCA Paisley. Once the structured interview is devised, the researcher can interview the manager and the volunteers. The next step is to deploy the mobile-web system for 1 - 2 weeks and do the interview again. The data obtained should be analysed to see the effects of the mobile-web system on the activity of YMCA Paisley.
 
 \section{Justification}(5 p - 125 w)\\
  % Rationale for the research showing gaps in current knowledge
 % and how the results of the research might be used.
 % (Aims, Objectives, Justification – about 1 page) (5 marks)
+	\indent
+	The author believes that there is a gap in the literature for  research that takes a booking software and analyzes how this can improve(or not) the activity of an organization.
+	Some of the research that the author has found on booking software focuses on usability and how it can be improved (Gündüz and  Pathan, 2012; Burmistrov, 2009). There is something similar  Abdulah and Kadim (2016) but the quality of the work is questionable as it will later be detailed in the literature review. Some works are similar but they  quality is questionable and old (Alawaer, Awni and AL-Zoubi, 2011; Karthick and Velmurugan, 2012; Abdulah and Kadim, 2016).
 
 \pagebreak
 
@@ -119,12 +129,25 @@ The main aim of this work is to develop a prototype webpage and a mobile applica
 % (guidance - no more than 2000 words – please give word count in document)
 % (20 marks)
 
+%peer review  - iraq paper just one citation
+%talk about weaknesses (suggest ways to improve) and strengths
+%table and graphs signposted
+%mention in your work the weaknesses and future work
+%the development of the application is not well-thought: eg. Db design. At some point the authors mention "Android Studio software design" which is not correct, essentially Android Studio is a Integrated Development Environment (simply put, a software).
+
+%weakeness: Iraq paper
+	% They mention that in 2016 or even earlier let's say if the paper was written 1-2 years before being published that users book flights 'manually' and check-in when the smartphone applications have been used for so many years to do that, not to mention the websites of the airlines.
+	%poor language for describing the charts
+	%grammar mistakes in the paper
+
+%weakness: India
+	% poor use of language/ grammar mistakes: smart phone (?)
 %FIXME should I remove the subsections?
 \subsection{Usability for Mobile-Web}
 
 \indent
 	The world of phones and computing changed in 2007 when the first iPhone was released due to the fact that this phone allows users to access Internet, has a touchscreen interface and is essentially a small computer that fits in a pocket. The term \textit{smartphone} is used to describe such a device. At the time of writing of this work (2019) there are about 2.71 billion smartphone users around the world and the number is expected to increase in the future (Number of smartphone users worldwide 2014-2020, n.d.). Such a large pool of users drives big companies to invest in their mobile applications and their websites in order to provide better customer experience (Vagrani, Kumar and Ilavarasan, 2017).\\ 
-	All major airlines companies nowadays offer booking facilities both through their website and mobile app. In this work the term mobile-web app is going to describe a webpage accompanied by a mobile app. While the purpose of this work is not related to any e-commerce industry, it is still worth to analyze how these booking systems are designed in  order to develop a better mobile-web prototype app. One of the crucial factors for using a mobile-web app from the perspective of the users is \textit{usability} and \textit{user experience}. However, there are different opinions in literature to what these terms mean. To eliminate any confusion that might arise their definitions from ISO 9241-210:2010 (2010) are provided below.
+	All major airlines companies nowadays offer booking facilities both through their website and mobile app. While the purpose of this work is not related to any e-commerce industry, it is still worth to analyze how these booking systems are designed in  order to develop a better mobile-web prototype app. One of the crucial factors for using a mobile-web app from the perspective of the users is \textit{usability} and \textit{user experience}. However, there are different opinions in literature to what these terms mean. To eliminate any confusion that might arise their definitions from ISO 9241-210:2010 (2010) are provided below.
 
 \begin{aquote}{ISO 9241-210:2010, 2010, non-paginated}
 	\textit{User Experience - person's perceptions and responses resulting from the use and/or anticipated use of a product, system or service.}	
@@ -156,6 +179,33 @@ The design of a webpage is not affected by many variables as it's the case for a
 
 %likeart-type scale
 
+% talk about the whole development process
+\subsection{Software Development}
+ 	As was mentioned before in this research proposal the software system is comprised by two components, namely, a webpage and a mobile application for the two major mobile OSs (iOS and Android). These two software products need to share a common database where all the data is stored. Data is generated by the volunteers using the mobile app and can be viewed by the manager and edited.\\
+	\indent
+	%web
+	When it comes to webpage development and Web Development in general there are many technologies that one can use for both client-side development and server-side development. The look and feel of the webpage does not need to have complex visual features, thus, its development can be done using HTML5, CSS3, JavaScript and AJAX. There are many server-side development languages that one can use like PHP, C\# (ASP.NET) or Python frameworks (Django, Flask). However, the author is going to use PHP due to the following reasons: past development experience with the language, it has a large community around it (Cass, 2018), can be embedded in HTML code and the stack \textbf{L}inux-\textbf{A}pache-\textbf{M}ySQL-\textbf{P}HP (LAMP stack)is free. Due to the fact that the webpage will contain a login feature and use a database extra security measures are needed. Namely, the login input needs to be sanitized to protect the webpage agains all kind of attacks simillar to  SQL Injection.\\ 
+	\indent
+	%database
+	Although MySQL database and PHP are often used together when developing webpages, for this project the author is going to use \textbf{F}irebase \textbf{R}ealtime \textbf{D}atabase (FRD). MySQL is a relational database which stores data in tables that have relationships and constraints among them, however, not all types of data can be easily structured in such a database type. Therefore we have document-oriented databases like FRD which work better for storing 'unstructured' data which is going to be the case for this project. Another reason to use FRD is the fact it integrates very well with object oriented programming languages that are going to be used like PHP and Dart (for the mobile development).\\ 
+	\indent
+	%mobile
+	The best approach to develop the mobile apps would be the native one, namely, to write the iOS app in Swift with Xcode and the Android one inJava with Android Studio. However, this approach is time consuming, a macOS machine for iOS development is needed and the author is not very familliar with Swift progamming. Therefore, a cross-platform approach will be put in practice, which means that the codebase for the mobile apps is written only once and the two apps are generated by a CPT. As was presented in the literature review there are many CPT to choose from but for this project Flutter (n.d.) is going to be used. To mention but a few reasons to use Flutter: hot reload (allows code to be injected on a running app; improves development time), the generated apps use native UI elements, open-source, good documentation materials and the possibility to use a familliar \textbf{I}ntegrated \textbf{D}evelopment \textbf{E}nvironment (IDE) like Android Studio. However, the iOS application cannot be published on AppStore due to the fact that now Apple accepts only applications that are written 100\% native in Swift.\\
+	%git
+	\indent
+	In order to keep track of all the code files there is going to  be used a version control website, GitHub (n.d.). The whole codebase is going to be contained in a repository with different submodules that can be updated independently. 
+	
+
+	%git
+% talk about data collection, about manager and volunteers/staff (instructed by the manager to take part in it), how you analyse data
+\subsection{Data collection and evaluation}
+	In order to evaluate the effects of the mobile-web system on the activity of YMCA Paisley a structured interview is going to be used. In total, a number of 6 persons are going to be interviewed, namely, the YMCA Pailsey manager and 5 other volunteers. The YMCA Paisley has around 25 volunteers, therefore, one fifth of the organization is going to be interviewed. The volunteers are selected based on how long they have been volunteering within the organization, from less experienced to more experienced ones. There are two methods suitable to conduct the interviews, namely, \textit{face-to-face} and via \textit{telephone call}. %describe them if you want to add more words. FIXME modify the weeks when the interview takes place once you adjust the table to 15 week. 
+	The author is going to use the \textit{face-to-face} approach because it offers also non-verbal data regarding what the interviewees think about the developed mobile-web system.  The author is going to organize two meetings to conduct the interviews, one in week 6 and one in week 12 (see Figure~\ref{gC}). There are no monetary costs involved for the volunteers or the author to come to this meetings because they can be held before/after the weekly organizaton's meeting.
+
+% talk about ethics
+\subsection{Ethical and practical considerations}
+	Before a young person starts a YMCA mentorship their parents/tutors must agree that YMCA processes and stores data regarding the young person. Due to the fact that such a mobile-web system uploads the young person's data on the Internet it must be very secure and has to comply with tough government regulations. However, because this is a plot study all the data that is going to be uploaded in the time the system is up is going to be spurious. In this way, there are no legal implications for the organization or for the author if somehow the mobile-web app gets hacked. 
+
 \pagebreak
 \section{Work plan}(10p - )\\
 %do I need to write smth here or the gantt chart is enough?
@@ -163,6 +213,7 @@ The design of a webpage is not affected by many variables as it's the case for a
 
 	\begin{figure}[H]
 
+		%modify this to reflect the 15 weeks of the MSc project
 		\includegraphics[scale = 0.5]{./imgs/ganttChart}
 		\caption{All the activities that need to be undertaken to finish the project}
 		\label{gC}
@@ -171,23 +222,34 @@ The design of a webpage is not affected by many variables as it's the case for a
 
 \pagebreak
 \section*{References}
+Abdullah, M.N. and Kadhim, E.H. (2016) Airline mobile reservation development.  \underline{International Advanced Research Journal in Science, Engineering and Technology} [Online]  pp.1-3. Available: https://iarjset.com/recent-issue-october-2016/ [Accessed: 6 April 2019]\\
 
-\underline{Flutter} (n.d.) [Online] Available: https://flutter.dev [Accessed 5 Apr 2019]\\
+Alfawaer, Z.M., Awni, M. and Al-Zoubi, S. (2011) Mobile e-ticketing reservation system for Amman International Stadium in Jordan. \underline{International Journal of Academic Research}  Vol. 3(1), pp.848-852.\\
+
+Burmistrov, I. (2009) Mobile air ticket booking.  \underline{European Conference on Cognitive} \underline{Ergonomics: Designing beyond the Product}\underline{---Understanding Activity and User}\\ \underline{Experience in Ubiquitous Environments} Article 11 Helsinki: VTT Technical Research Centre of Finland.\\
+
+Cass, S. (2018) The 2018 Top Programming Languages.  \underline{IEEE Spectrum} (July 2018) [Online] Available: https://bit.ly/2AquJBT [Accessed: 10 April 2019]\\
+
+\underline{Flutter} (n.d.) [Online] Available: https://flutter.dev [Accessed 5 April 2019]\\
+
+\underline{GitHub} (n.d.) [Online] Available: https://github.com/ [Accessed 6 April 2019]\\
 
 Gündüz, F. and Pathan, A.S.K., (2012) Usability improvements for touch-screen mobile flight booking application: A case study.  \underline{International Conference on Advanced } \underline{Computer Science Applications and Technologies}  pp. 49-54. Kuala Lumpur: IEEE.\\
 
-\underline{ISO 9241-210:2010} (2010) [Online] Available: https://bit.ly/1j1dMhv [Accessed 3 Apr 2019].\\
+\underline{ISO 9241-210:2010} (2010) [Online] Available: https://bit.ly/1j1dMhv [Accessed: 3 April 2019].\\
 
-McNamara, N. and Kirakowski, J., (2005)  Defining usability: quality of use or quality of experience? In \underline{IPCC 2005. Proceedings. International Professional Communication} \underline{Conference} pp. 200-204. Limerick: IEEE.\\
+Karthick, S. and Velmurugan, A. (2012) Android suburban railway ticketing with GPS as ticket checker.  \underline{IEEE International Conference on Advanced Communication }\\ \underline{Control and Computing Technologies (ICACCCT)} pp. 63-66  s.l.: IEEE\\
 
-\underline{Number of smartphone users worldwide 2014-2020} (n.d.) [Online]  Available:\\ https://bit.ly/2dk8wHh [Accessed 3 Apr 2019].\\
+McNamara, N. and Kirakowski, J., (2005)  Defining usability: quality of use or quality of experience?  \underline{IPCC 2005. Proceedings. International Professional Communication} \underline{Conference} pp. 200-204. Limerick: IEEE.\\
+
+\underline{Number of smartphone users worldwide 2014-2020} (n.d.) [Online]  Available:\\ https://bit.ly/2dk8wHh [Accessed: 3 April 2019].\\
 
 Oulasvirta, A., Tamminen, S., Roto, V. and Kuorelahti, J., (2005) Interaction in 4-second bursts: the fragmented nature of attentional resources in mobile HCI. \\
-\underline{In Proceedings of the SIGCHI conference on Human factors in computing systems} pp. 919-928. New York: ACM. \\
+\underline{ Proceedings of the SIGCHI conference on Human factors in computing systems} pp. 919-928. New York: ACM. \\
 
-SlashData (2012) \underline{Vision mobile cross-platform developer tools 2012}  [Online] Available: https://bit.ly/2GhaYMC [Accessed 5 Apr 2019].\\
+SlashData (2012) \underline{Vision mobile cross-platform developer tools 2012}  [Online] Available: https://bit.ly/2GhaYMC [Accessed: 5 April 2019].\\
 
-Vagrani, A., Kumar, N. and Ilavarasan, P.V., (2017) Decline in Mobile Application Life Cycle. \underline{Procedia computer science}. vol. 122, pp. 957-964. [Online] Article in Press. Available: https://doi.org/10.1016/j.procs.2017.11.460 [Accessed 3 Apr 2019].\\
+Vagrani, A., Kumar, N. and Ilavarasan, P.V., (2017) Decline in Mobile Application Life Cycle. \underline{Procedia computer science}. vol. 122, pp. 957-964. [Online] Article in Press. Available: https://doi.org/10.1016/j.procs.2017.11.460 [Accessed 3 April 2019].\\
 
 Willocx, M., Vossaert, J. and Naessens, V. (2016) Comparing performance parameters of mobile app development strategies.  \underline{2016 IEEE/ACM International Conference on} \underline{Mobile Software Engineering and Systems (MOBILESoft)} pp. 38-47.  Austin: IEEE.\\
 
